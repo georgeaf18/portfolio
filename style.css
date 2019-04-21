@@ -26,7 +26,8 @@ body {
 /***************************** modal/popup start *****************************/
 
 .popup_content {
-    margin: 30px;
+    margin: 30px 80px;
+    line-height: 2.2rem;
     font-size: 1.3rem;
 }
 
@@ -51,11 +52,15 @@ body {
     text-decoration: underline #fc1049;
 }
 
+.about_icons {
+    width: 100%;
+}
+
 .about_icon {
-    /* font-size: 5rem; */
     filter: grayscale();
-    width: 100px;
-    margin: 30px;
+    width: 48%;
+    margin: 20px 0;
+    
 }
 
 .about_icon:hover {
@@ -338,6 +343,10 @@ footer {
     #my_pic {
         width: 20%;
     }
+
+    .about_icon {
+        width: 30%;
+    }
 }
 
 @media only screen and (min-width: 992px){
@@ -346,6 +355,10 @@ footer {
         width: 80%;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .presentation{
+        margin-bottom: 50px;
     }
     
     .navbar-collapse {
@@ -400,7 +413,6 @@ footer {
 
     .fixed p, .fixed .nav-link, .fixed h1 {
         color: black!important;
-        /* transition: all 500ms ease-in-out; */
     }
 
     .hidden {
@@ -410,7 +422,6 @@ footer {
 
     #contact_me_div {
         display: flex;
-       /* justify-content: space-evenly; */
     }
 
     #my_pic {
@@ -427,15 +438,8 @@ footer {
         width: 75%;
     }
     
-    footer {
-        /* position: relative; */
-
-    }
-
-    .footer_icons {
-        /* position: absolute;
-        top: -230px;
-        left: -330px; */
+    .about_icon {
+        width: 20%;
     }
     
     .footer_icons i {
@@ -446,8 +450,11 @@ footer {
 }
 
 @media only screen and (min-width: 1000px){
-    #contact_me_div {
+    #contact_me_div, .nav_bar, .presentation, .portfolio {
         max-width: 1150px;
-        margin: 0 auto;
+        margin-right: auto;
+        margin-left: auto;
     }
+
+
 }
