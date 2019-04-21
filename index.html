@@ -206,26 +206,24 @@
 
 			</div>
 
+
 			<form id="contact_form" action='https://formspree.io/georgeaf1825@gmail.com' method="POST">
 				<div class=" width contact_input form-group">
-					<input name="name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+					<input name="name" type="text" class="form-control" id="nameInput" placeholder="Name" required>
 				</div>
 
 				<div class=" width contact_input form-group">
-						<input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address">
-					  </div>
-				
-					  
-				<div class=" width contact_input form-group">
-					<input	name="subject" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Subject">
+						<input name="email" type="email" class="form-control" id="emailInput" placeholder="Email Address" required>
 				</div>
+				
+					
 
 				<div class=" width contact_input form-group">
-					<textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Message"></textarea>
+					<textarea name="message" class="form-control" id="messageInput" rows="5" placeholder="Message" required></textarea>
 				</div>
 				
 				
-				<button class="btn btn-primary" type="submit" id="submit_btn">Send</button>
+				<button  class="btn btn-primary" type="submit" id="submit_btn">Send</button>
 			</form>
 		</div>
 	</div>

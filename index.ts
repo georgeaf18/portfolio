@@ -1,9 +1,13 @@
 "use strict"; {
 
+  const nameInput = (document.querySelector('#nameInput')).nodeValue;
+  const emailInput = (document.querySelector('#emailInput')).nodeValue;
+  const messageInput = (document.querySelector('#messageInput')).nodeValue;
+  const submit_btn:HTMLButtonElement = document.querySelector('#submit_btn');
+
   /**************** navbar links bottom border toggler ****************/  
 
 const btns = document.querySelectorAll('.nav-link');
-
 
 
 for (let i: number = 0; i < btns.length; i++){
@@ -34,9 +38,12 @@ const scene = new ScrollMagic.Scene({
 
 
 
-// .setClassToggle('.nav_bar', 'hidden')
-// .addTo(controller2);
 
 
+
+  
 }
+
+
+
 
