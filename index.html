@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" href="animate.css">
 	<link rel="stylesheet" href="style.css">
 	<title>George Almonte</title>
 </head>
@@ -43,12 +44,12 @@
 						</li>
 
 						<li class="nav-item">
-						  <a class="nav-link" href="#contact_heading" >Contact Me</a>
+						  <a class="nav-link" id="contact_me" href="#contact_heading" >Contact Me</a>
 						</li>
-
+<!-- 
 						<li class="nav-item">
 							<a class="nav-link" href="#aboutme" data-toggle="modal" data-target=".bd-example-modal-lg" >About Me</a>
-						</li>
+						</li> -->
 						<hr />
 					  </ul>
 					  
@@ -120,7 +121,7 @@
 	</div>
 	
 	<main>
-		<div class="presentation">
+		<div class=" presentation ">
 			<h1>FRONT-END WEB DEVELOPER.</h1>
 	
 			<p>
@@ -130,9 +131,9 @@
 				
 			<div class="call_to_action">
 				
-					<button onclick="location.href= '#projects'" type="submit" class="portfolio_btn buttons btn btn-primary">Portfolio</button>
+					<button onclick="location.href= '#projects'" type="submit" class=" wow fadeInLeft portfolio_btn buttons btn btn-primary">Portfolio</button>
 				
-					<a href="img/logo.png" download= "George Almonte's resume " target="_blank"><button type="button" class="resume buttons btn btn-primary">Resume<i class=" download_icon fas fa-file-download"></i></button></a>
+					<a class="outer_resume wow fadeInRight" href="img/logo.png" download= "George Almonte's resume " target="_blank"><button type="button" class="resume buttons btn btn-primary">Resume<i class=" download_icon fas fa-file-download"></i></button></a>
 				
 			</div>
 		</div>
@@ -159,9 +160,20 @@
 						<span class="badge badge-primary primary_color"> Vanilla Javascript</span>
 					</div>	
 
-					<div class="call_to_action">
-					 	<button onclick="location.href = 'https://georgeaf18.github.io/budgetSidekick/'" type="button" class="visit_btn buttons btn btn-primary">Visit website</button>
-						<button onclick="location.href = 'https://github.com/georgeaf18/budgetSidekick'"type="button" class="view_btn buttons btn btn-primary">View code</button>
+					<div class="wow fadeInRight call_to_action">
+					 	<a href = 'budget_sidekick/index.html' target="_blank" class="visit">
+							 <button 
+							 type="button" 
+							 class="visit_btn buttons btn btn-primary">
+								Visit website
+							</button>
+						</a>
+						<a href = 'https://github.com/georgeaf18/budgetSidekick' target="_blank" class="view">
+							<button
+							type="button" class="view_btn buttons btn btn-primary">
+								View code
+							</button>
+						</a>
 					</div>
 				</div>
 				
@@ -249,6 +261,11 @@
 	
 	<script src="ScrollMagic.js"></script>
 	<!-- <script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script> -->
+
+	<script src="wow.min.js"></script>
+	<script>
+			new WOW().init();
+	</script>
 
 	<script src="index.js"></script>
 </body>

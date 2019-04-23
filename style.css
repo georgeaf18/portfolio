@@ -11,7 +11,9 @@ body {
     width: 80%;
     margin: 0 auto;
     background-color: white;
+    
 }
+
 
 body {
     background: url('img/coding-laptop-1.jpg') no-repeat center center fixed;
@@ -140,10 +142,19 @@ header {
 .burger {
     color: white;
 }
+
+#contact_me {
+    background-color: #fc1049;
+    border-radius: 10px;
+    
+}
 /***************************** presentation start *****************************/
     .presentation {
         margin: 20px;
         color: white;
+        height: calc(100vh - 183px);
+        min-height: 490px;
+
         
     }
 
@@ -316,7 +327,7 @@ footer {
     }
 
 
-    .portfolio_btn, .call_to_action a, .visit_btn, .view_btn {
+    .portfolio_btn, .outer_resume, .visit_btn, .view_btn {
         width: 30%;
 
         
@@ -346,6 +357,12 @@ footer {
 
     .about_icon {
         width: 30%;
+    }
+
+    .view, .visit {
+        width: 100%;
+        margin-right: 20px;
+        
     }
 }
 
@@ -445,12 +462,17 @@ footer {
     .footer_icons i {
         color: #fc1049;
     }
+
+
+
+
+    
     
 
 }
 
 @media only screen and (min-width: 1000px){
-    #contact_me_div, .nav_bar, .presentation, .portfolio {
+    #contact_me_div, .presentation, .portfolio {
         max-width: 1150px;
         margin-right: auto;
         margin-left: auto;
