@@ -72,6 +72,7 @@ body {
 /***************************** header start *****************************/
 .nav_bar {
     width: 100%;
+    z-index: 3;
 }
 
 .navbar {
@@ -146,6 +147,7 @@ header {
 #contact_me {
     background-color: #fc1049;
     border-radius: 10px;
+    color: white!important;
     
 }
 /***************************** presentation start *****************************/
@@ -158,6 +160,28 @@ header {
         
     }
 
+    .scroll_down, .scroll_down:active, .scroll_down:hover {
+        width: 100%;
+        margin-top: 16%;
+        text-align: center;
+        font-size: 6rem;
+        color: #fc1049;
+        cursor: pointer;
+        display: block;
+        animation-iteration-count: infinite;
+        animation-duration: 2.5s;
+    }
+
+    
+
+    
+        
+    
+
+    
+
+
+
 
 /***************************** call to action buttons start *****************************/
 
@@ -166,6 +190,10 @@ header {
     background-color: #fc1049;
     border: none;
     margin-right: 10px;
+}
+
+.portfolio_btn, .outer_resume {
+    animation-duration: 1.5s;
 }
 
 
@@ -186,6 +214,15 @@ border: none;
 }
 
 /***************************** portfolio start *****************************/
+
+#projects_heading {
+    text-align: center;
+    font-size: 3rem;
+    text-decoration-line: underline;
+    animation-delay: 1s;
+
+}
+
 
 .portfolio {
     margin: 0 auto;
@@ -210,6 +247,15 @@ border: none;
     margin: 40px auto;
     width: 100%;
 }
+
+.project_content {
+    animation-delay: 2s;
+}
+
+.project_img {
+    animation-duration: 1.5s;
+}
+
 /***************************** contact me start *****************************/
     #contact_me_div{
         padding-bottom: 50px;
@@ -391,10 +437,17 @@ footer {
     .nav-link {
         margin-right: 20px;
         background: none;
+        text-decoration: none;
+        background-image: linear-gradient(#fc1049, #fc1049);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
     }
     
     .active, .nav-link:hover {
-        border-bottom: #fc1049 solid 3px;
+        /* border-bottom: #fc1049 solid 3px; */
+        background-size: 100% 3px;
 
     }
 
