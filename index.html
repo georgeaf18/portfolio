@@ -36,21 +36,21 @@
 					<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 					  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 						<li class="nav-item ">
-						  <a class="nav-link home active" href="#">Home</a>
+						  <a class="nav-link home active"  id="home_button" >Home</a>
 						</li>
 
 						<li class="nav-item">
-						  <a class="nav-link" href="#projects_heading">Portfolio</a>
+						  <a class="nav-link " id="portfolio_button"  >Portfolio</a>
 						</li>
 
 						<li class="nav-item">
-						  <a class="nav-link" id="contact_me" href="#contact_heading" >Contact Me</a>
+							<a class="nav-link" id="about_button" >About Me</a>
 						</li>
-<!-- 
+
 						<li class="nav-item">
-							<a class="nav-link" href="#aboutme" data-toggle="modal" data-target=".bd-example-modal-lg" >About Me</a>
-						</li> -->
-						<hr />
+						  <a class="nav-link" id="contact_button"  >Contact Me</a>
+						</li>
+						
 					  </ul>
 					  
 					</div>
@@ -62,77 +62,28 @@
 	</header>
 
 
-	<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-lg">
-			  <div class="modal-content">
-
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLongTitle">About Me</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-
-				<div class="popup_content">
-
-					<img class="my_pic_about" src="img/me.png" alt="">
-
-					<p>
-							Hello, my name is George Almonte. I am a Front-End Web Developer. 
-							I live in Wyandotte, MI. I enjoy playing piano, traveling and learning.
-					</p>
-							
-					<p>  
-							Currently I am enrolled in an intensive boot camp called 
-							<a class="grand_circus" href="https://www.grandcircus.co/" target="_blank">Grand Circus</a>. 
-							At Grand Circus I learn about different technologies used to create and maintain websites.
-							I am very passionate about technology, specifically because the industry 
-							is ever-changing and growing, making new ideas come to life. Given this, 
-							I am motivated and eager to learn new technical skills to sharpen 
-							and expand my knowledge on web design. 
-							
-					</p>
-					
-
-					
-
-					<h3>I have experience using different technologies such as</h3>
-					<div class="about_icons">
-
-						<img class="about_icon" src="img/html.png" alt="HTML" title="HTML5">
-						<img class="about_icon" src="img/css.png" alt="CSS3" title="CSS3">
-						<img class="about_icon" src="img/js.png" alt="Javascript" title="Javascript">
-						<img class="about_icon" src="img/ts.png" alt="Typescript" title="Typescript">
-						<img class="about_icon" src="img/angular.svg" alt="Angular 7" title="Angular 7">
-
-					</div>
-
-					<p>
-							I am currently seeking a position as Front-End Web Developer. 
-							I welcome the opportunity to further discuss the strengths 
-							I would bring to your company.  I am available at 
-							<a href="mailto: georgeaf1825@gmail.com">georgeaf1825@gmail.com</a> 
-							or by phone at <a href="tel: (734) 288-7741">(734) 288-7741</a>. Thank you for your time and I look forward to hearing 
-							from you in the near future. 
-					</p>
-				</div>
-			  </div>
-			</div>
-	</div>
+	
 	
 	<main>
 		<div class=" presentation ">
 			<h1>FRONT-END WEB DEVELOPER.</h1>
 	
 			<p>
-				Based out of Wyandotte, MI. I am currently a student at Grand Circus, undergoing an intensive, part-time, 26 weeks 
+				Based out of Wyandotte, MI. I am currently a student at
+
+				<a class="grand_circus" href="https://www.grandcircus.co/" target="_blank">
+					Grand Circus
+				</a>
+				, undergoing an intensive, part-time, 26 weeks 
 				program to learn how to create efficient and awesome code for websites.
+				
 			</p>
 				
 			<div class="call_to_action">
 				
-					<button onclick="location.href= '#projects_heading'" type="submit" 
-					class=" wow fadeInLeftBig portfolio_btn buttons btn btn-primary">
+					<button  type="submit" 
+					class=" wow fadeInLeftBig portfolio_btn  buttons btn btn-primary"
+					id="portfolio_button2">
 						Portfolio
 					</button>
 				
@@ -155,7 +106,7 @@
 		
 		<div id="white_bg">
 		
-		<div class="portfolio">
+		<div class="portfolio" id="portfolio">
 			<h1 class="wow fadeInUp" id="projects_heading">Projects</h1>
 
 			<div class="projects_div">
@@ -197,6 +148,60 @@
 			<img class="separator" src="img/separator.png" alt="">
 
 		</div>
+
+	
+
+
+					<div id="about_me" class="about_div">
+
+						<h1 class=" wow fadeInUp about_heading" >About Me</h1>
+
+	
+						<p>
+								Hello, my name is George Almonte. I am a Front-End Web Developer. 
+								I live in Wyandotte, MI. I enjoy playing piano, traveling and learning.
+						</p>
+								
+						<p>  
+								Currently I am enrolled in an intensive boot camp called <br/>
+								<a class="" href="https://www.grandcircus.co/" target="_blank">Grand Circus</a>. 
+								At Grand Circus I learn about different technologies used to create and maintain websites.
+								I am very passionate about technology, specifically because the industry 
+								is ever-changing and growing, making new ideas come to life. Given this, 
+								I am motivated and eager to learn new technical skills to sharpen 
+								and expand my knowledge on web design. 
+								
+						</p>
+						
+	
+						
+	
+						<h3>I have experience using different technologies such as</h3>
+						<div class="about_icons">
+	
+							<img class="about_icon" src="img/html.png" alt="HTML" title="HTML5">
+							<img class="about_icon" src="img/css.png" alt="CSS3" title="CSS3">
+							<img class="about_icon" src="img/js.png" alt="Javascript" title="Javascript">
+							<img class="about_icon" src="img/ts.png" alt="Typescript" title="Typescript">
+							<img class="about_icon" src="img/angular.svg" alt="Angular 7" title="Angular 7">
+	
+						</div>
+	
+						<p>
+								I am currently seeking a position as Front-End Web Developer. 
+								I welcome the opportunity to further discuss the strengths 
+								I would bring to your company.  I am available at 
+								<a href="mailto: georgeaf1825@gmail.com">georgeaf1825@gmail.com</a> 
+								or by phone at <a href="tel: (734) 288-7741">(734) 288-7741</a>. Thank you for your time and I look forward to hearing 
+								from you in the near future. 
+						</p>
+					</div>
+
+
+					
+					<img class="separator" src="img/separator.png" alt="">
+
+
 
 
 
@@ -280,6 +285,46 @@
 	<script src="wow.min.js"></script>
 	<script>
 			new WOW().init();
+	</script>
+
+	<script type="module">
+
+		import jump from './jump.js'
+
+		let home_btn = document.querySelector('#home_button');
+
+		home_btn.addEventListener('click', () => {
+			jump('#');
+		});
+
+		let portfolio_btn = document.querySelector('#portfolio_button');
+
+		portfolio_btn.addEventListener('click', () => {
+			jump('#portfolio');
+		});
+
+		let portfolio_btn2 = document.querySelector('#portfolio_button2');
+
+		portfolio_btn2.addEventListener('click', () => {
+			jump('#portfolio');
+		});
+
+		let about_btn = document.querySelector('#about_button');
+
+		about_btn.addEventListener('click', () => {
+			jump('#about_me');
+		});
+
+		let contact_btn = document.querySelector('#contact_button');
+
+		contact_btn.addEventListener('click', () => {
+			jump('#contact_me_div');
+		});
+
+		
+
+
+
 	</script>
 
 	<script src="index.js"></script>
