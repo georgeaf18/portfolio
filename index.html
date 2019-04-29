@@ -15,7 +15,7 @@
 <body>
 	
 	<div class="background"></div>
-
+	<span id="home" ></span>
 	<header>	
 
 		
@@ -106,7 +106,7 @@
 		
 		<div id="white_bg">
 		
-		<div class="portfolio" id="portfolio">
+		<div class="portfolio jumptarget" id="portfolio">
 			<h1 class="wow fadeInUp" id="projects_heading">Projects</h1>
 
 			<div class="projects_div">
@@ -149,10 +149,9 @@
 
 		</div>
 
-	
 
 
-					<div id="about_me" class="about_div">
+					<div id="about_me" class="about_div jumptarget">
 
 						<h1 class=" wow fadeInUp about_heading" >About Me</h1>
 
@@ -164,7 +163,7 @@
 								
 						<p>  
 								Currently I am enrolled in an intensive boot camp called <br/>
-								<a class="" href="https://www.grandcircus.co/" target="_blank">Grand Circus</a>. 
+								<a class="red" href="https://www.grandcircus.co/" target="_blank">Grand Circus</a>. 
 								At Grand Circus I learn about different technologies used to create and maintain websites.
 								I am very passionate about technology, specifically because the industry 
 								is ever-changing and growing, making new ideas come to life. Given this, 
@@ -176,7 +175,7 @@
 	
 						
 	
-						<h3>I have experience using different technologies such as</h3>
+						<h3>I have experience using different technologies such as;</h3>
 						<div class="about_icons">
 	
 							<img class="about_icon" src="img/html.png" alt="HTML" title="HTML5">
@@ -191,8 +190,8 @@
 								I am currently seeking a position as Front-End Web Developer. 
 								I welcome the opportunity to further discuss the strengths 
 								I would bring to your company.  I am available at 
-								<a href="mailto: georgeaf1825@gmail.com">georgeaf1825@gmail.com</a> 
-								or by phone at <a href="tel: (734) 288-7741">(734) 288-7741</a>. Thank you for your time and I look forward to hearing 
+								<a class="red" href="mailto: georgeaf1825@gmail.com">georgeaf1825@gmail.com</a> 
+								or by phone at <a class="red" href="tel: (734) 288-7741">(734) 288-7741</a>. Thank you for your time and I look forward to hearing 
 								from you in the near future. 
 						</p>
 					</div>
@@ -294,7 +293,7 @@
 		let home_btn = document.querySelector('#home_button');
 
 		home_btn.addEventListener('click', () => {
-			jump('#');
+			jump('#home');
 		});
 
 		let portfolio_btn = document.querySelector('#portfolio_button');

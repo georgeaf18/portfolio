@@ -64,8 +64,7 @@ body {
     margin: 0;
     font-size: 1.3rem;
     color: white !important;
-    /* border-bottom: solid 1px white; */
-    /* box-shadow: 0px 24px 3px -24px white; */
+    cursor: pointer;
     background-color: black;
 }
 header {
@@ -118,6 +117,13 @@ header {
     border-radius: 10px;
     color: white!important;
     
+}
+
+.jumptarget::before {
+    content:"";
+    display:block;
+    height:73px; /* fixed header height*/
+    margin:-73px 0 0; /* negative fixed header height */
 }
 /***************************** presentation start *****************************/
     .presentation {
@@ -307,6 +313,10 @@ border: none;
     width: 60%;
     margin: 0 auto;
     font-size: 1.3rem;
+}
+
+.red {
+    color: #fc1049!important;
 }
 
 
@@ -503,6 +513,8 @@ footer {
     .fixed p, .fixed .nav-link, .fixed h1 {
         color: black!important;
     }
+
+    
 
     .hidden {
         visibility: hidden;

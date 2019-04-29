@@ -26,16 +26,5 @@
         .setClassToggle('.nav_bar', 'fixed')
         .addTo(controller);
     // offsetTop
-    // console.log($('.portfolio').getBoundingClientRect().top);
-    // function initSmoothScrolling() {
-    //   if (isCssSmoothSCrollSupported()) {
-    //       document.getElementById('css-support-msg').className = 'supported';
-    //       return;
-    //   }
-    //   //...
-    // }
-    // function isCssSmoothSCrollSupported() {
-    //   return 'scrollBehavior' in document.documentElement.style;
-    // }
-    // initSmoothScrolling();
+    console.log($('.portfolio').getBoundingClientRect.top);
 }
