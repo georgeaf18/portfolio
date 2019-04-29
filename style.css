@@ -162,9 +162,11 @@ header {
 
 
 .portfolio_btn, .portfolio_btn:hover, .portfolio_btn:active, .visit_btn, .visit_btn:hover{
-    background-color: #fc1049;
+    background-color: #fc1049!important;
     border: none;
     margin-right: 10px;
+    outline: none!important;
+    box-shadow: none!important;
 }
 
 .portfolio_btn, .outer_resume {
@@ -178,8 +180,10 @@ header {
 }
 
 .resume, .resume:hover, .view_btn, .view_btn:hover{
-background-color: #484848c9;
+background-color: #484848c9!important;
 border: none;
+outline: none!important;
+box-shadow: none!important;
 }
 
 .download_icon {
