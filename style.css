@@ -314,7 +314,7 @@ box-shadow: none!important;
 }
 
 .about_div {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     font-size: 1.3rem;
 }
@@ -549,7 +549,9 @@ footer {
         color: #fc1049;
     }
 
-
+    .about_div {
+        width: 60%;
+    }
     
 
     
